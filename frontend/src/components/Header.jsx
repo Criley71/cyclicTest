@@ -2,7 +2,7 @@ import { FaSignInAlt, FaSignOutAlt, FaUser } from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { logout, reset } from '../features/auth/authSlice'
-
+import '../index.css'
 function Header() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -15,17 +15,44 @@ function Header() {
   }
 
   return (
-    <header className='header'>
+    <header className='newheader'>
       <div className='logo'>
         <Link to='/'>PaxPal</Link>
       </div>
-      <ul className='lnr'>
+      <ul >
         {user ? (
-          <li>
-            <button className='btn' onClick={onLogout}>
-              <FaSignOutAlt /> Logout
-            </button>
-          </li>
+          <div className='newheader'>
+            <div className='headerbtn'>
+              <li >
+                <Link to="/dashboard">
+                  <button>Log Entry</button>
+                </Link>
+              </li>
+              <li>
+                <Link to="/Import">
+                  <button>Import Data</button>
+                </Link>
+              </li>
+              <li>
+                <Link to="/Graphs">
+                  <button >Visualize</button>
+                </Link>
+
+              </li>
+              <li>
+                <Link to="/Survey">
+                  <button>Survey</button>
+                </Link>
+              </li>
+              <li>
+                <button className='headerbtn' onClick={onLogout}>
+                  <FaSignOutAlt /> Logout
+                </button>
+              </li>
+
+
+            </div>
+          </div>
         ) : (
           <>
             <li>
@@ -41,7 +68,7 @@ function Header() {
           </>
         )}
       </ul>
-    </header>
+    </header >
   )
 }
 

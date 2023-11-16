@@ -16,7 +16,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #4396ea;
+  
 }
 
 p {
@@ -25,6 +26,7 @@ p {
 
 ul {
   list-style: none;
+  display: inline;
 }
 
 li {
@@ -39,11 +41,37 @@ h3 {
 }
 
 .container {
-  width: 100%;
-  max-width: 960px;
+  width: 100vw;
+  display: inline-block;
   margin: 0 auto;
-  padding: 0 20px;
+  justify-content: center;
   text-align: center;
+}
+.headerbtn{
+  padding: 10px 20px;
+  
+  border-radius: 5px;
+  
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newheader {
+  background-color: white;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .header {
@@ -62,11 +90,12 @@ h3 {
 }
 
 .header ul li {
-  margin-left: 20px;
+  justify-content: center;
+  margin-left: 300px;
 }
 
 .header ul li a {
-  display: flex;
+  display:flex;
   align-items: center;
 }
 
@@ -235,10 +264,13 @@ h3 {
 
 .logo {
   font-size: 30px;
+  display: flex;
+  justify-content: left;
 }
 
 .lnr {
-  font-size: 25px
+  font-size: 25px;
+  
 }
 
 
@@ -273,3 +305,4 @@ h3 {
 .inbox-carbCount {
   margin-left: 40px;
 }
+
