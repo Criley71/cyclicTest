@@ -71,3 +71,16 @@ p {
   color: #d5dde3;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.feature {
+  color: #d1e5f2;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: rgba(91, 120, 181, 0.368);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.paxpallogo {
+  margin-bottom: -50px
+}

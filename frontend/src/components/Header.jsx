@@ -29,21 +29,11 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/Import">
+                <Link to="/import">
                   <button>Import Data</button>
                 </Link>
               </li>
-              <li>
-                <Link to="/Graphs">
-                  <button >Visualize</button>
-                </Link>
-
-              </li>
-              <li>
-                <Link to="/Survey">
-                  <button>Survey</button>
-                </Link>
-              </li>
+              
               <li>
                 <button className='headerbtn' onClick={onLogout}>
                   <FaSignOutAlt /> Logout

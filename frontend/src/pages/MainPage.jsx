@@ -3,6 +3,7 @@ import '../Mainpage.css';
 import { Link, useNavigate, useHistory } from 'react-router-dom'
 import Header from '../components/Header';
 import { logout } from '../features/auth/authSlice';
+import paxpalLogo from '../paxpalLogo.png'
 const MainPage = ({ handleNavigation }) => {
   const handleLogout = () => {
     // Perform logout actions here
@@ -14,7 +15,7 @@ const MainPage = ({ handleNavigation }) => {
 
   return (
     <div className="main-page-container">
-
+      <img src={paxpalLogo} className='paxpallogo'></img>
       <div className="content">
         <div className="hero-section">
           <h1>Welcome to PaxPal</h1>
