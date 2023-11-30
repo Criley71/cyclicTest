@@ -43,6 +43,9 @@ function MealItem({ meal }) {
     iMinutes = splitITime[1]
   }
 
+  const delay = ms => new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
 
   return (
       <div className='meal'>
@@ -59,6 +62,7 @@ function MealItem({ meal }) {
       
       <button onClick={() => {
         dispatch(deleteMeal(meal._id))
+        delay(500);
         window.location.reload()
       }} className='close'>
         X
